@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+.navigation {
+  background: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  top: 0;
+  /* for scrolling */
+  position: fixed;
+  z-index: 1;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.nav-head img {
+  width: 8vw;
+  height: 4vw;
+}
+.menu,.imdbpro,.watchlist,.signin {
+  padding-top: 1.5vw;
+}
+.menu-dropdown {
+  background-color: #020302;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-dropdown a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-dropdown a:hover {
+  background-color: rgb(66, 64, 64);
+}
+
+.menu:hover .menu-dropdown {
+  display: block;
+}
+
+.menu:hover .menu-dropdown {
+  background-color: #010a02;
+}
+.search-bar input {
+  padding: 1.5vw;
+  border: none;
+  margin-top: 8px;
+  font-size: 20px;
+  height: 1vw;
+  width: 30vw;
+}
+#search {
+  color: white;
+  background-color: rgb(56, 37, 37);
+  outline: none;
+  padding: 10px;
+}
+.one {
+  padding-top: 100px;
+}
+.one-one {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  margin-right: 10px;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-one.is-fullscreen .one-one-cell {
+  height: 100%;
+}
+
+.one-one-cell img {
+  max-height: 100%;
+}
+h2 {
+  color: yellow;
+  padding: 50px;
+}
+.slider-box {
+  height: 350px;
+  width: 250px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid white; 
+  float: left;
+}
+.img-box {
+  height: 170px;
+}
+.img-box img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: white;
+  line-height: 35px;
+}
+.slider-box:hover {
+  box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+}
+.slider-box:hover .img-box img {
+  transform: scale(1.07);
+  transition: all ease 0.3s;
+}
