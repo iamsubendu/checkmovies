@@ -321,6 +321,9 @@ h2 {
 footer {
 	padding-top: 100px;
 }
+#movies-searchable {
+	padding-top: 100px;
+}
 
 }
 
@@ -396,6 +399,9 @@ h2 {
   padding-top: 100px;
 }
 footer {
+	padding-top: 100px;
+}
+#movies-searchable {
 	padding-top: 100px;
 }
 }
