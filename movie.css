@@ -6,6 +6,7 @@
 body {
   background: black;
   width: 100%;
+  overflow-x: hidden;
 }
 .navigation {
   background: black;
@@ -73,7 +74,7 @@ body {
   padding: 1.5vw;
   border: none;
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 1vw;
   height: 1vw;
   width: 30vw;
 }
@@ -107,6 +108,7 @@ body {
 }
 .slider-box {
   position: relative;
+  left: 80px;
   border-radius: 5px;
   flex-direction: column;
   justify-content: center;
@@ -116,12 +118,13 @@ body {
   border: 1px solid white; 
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
+  width: 300px;
+  height: 15vw;
 }
 .img-box {
-  height: 170px;
+  height: 10vw;
 }
 .img-box img {
-  height: auto;
   max-width: 100%;
   max-height: 100%;
 }
@@ -144,7 +147,9 @@ body {
 h2 {
   color: yellow;
   padding: 30px;
-  font-size: 30px;
+  font-size: 3vw;
+  position: relative;
+  left: 5vw;
 }
 .popup {
   color: rgb(255, 255, 255);
@@ -244,19 +249,19 @@ a:active {
   /* for mobiles */
   .popup img {
   position: relative;
-  left: 100px;
+  left: 0px;
   width: 200px;
   height: 200px;
 }
 .popup h1 {
   position: relative;
-  left: 100px;
+  left: 0px;
   color: rgb(206, 206, 176);
   padding-bottom: 30px;
 }
 .popup p {
   position: relative;
-  left: 170px;
+  left: 70px;
   width: 70%;
 }
 .navigation {
@@ -265,6 +270,7 @@ a:active {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  height: 50px;
   }
 .navigation a { 
   text-align: center; 
@@ -278,12 +284,45 @@ a:active {
 .one {
   display: none;
 }
-
+.menu,.imdbpro,.watchlist,.signin {
+  display: none;
+}
+#search {
+  padding: 0;
+}
+.nav-head img {
+  width: 10vw;
+  height: 6vw;
+}
+.slider-box {
+  position: relative;
+  left: 70px;
+  width: 300px;
+  height: 200px;
+    display: grid;
+  padding-top: 10px;
+  grid-template-rows: 1fr ;
+  row-gap: 15px;
+}
+.img-box {
+  height: 12vw;
+}
+.img-box img {
+  max-width: 100px;
+  max-height: 200px;
+  position: relative;
+  bottom: 50px;
+}
+h2 {
+  position: relative;
+  left: 11vw;
+  padding-top: 100px;
+}
 
 }
 
 
-@media all and (min-width: 801px) and (max-width: 1000px) {
+@media all and (min-width: 601px) and (max-width: 1000px) {
   .popup img {
   position: relative;
   left: 190px;
@@ -319,6 +358,38 @@ a:active {
 .one {
   display: none;
 }
-
-
+.nav-head img {
+  width: 10vw;
+  height: 6vw;
+}
+.menu,.imdbpro,.watchlist,.signin {
+  display: none;
+}
+#search {
+  padding: 0;
+}
+.slider-box {
+  position: relative;
+  left: 70px;
+  width: 300px;
+  height: 200px;
+    display: inline-grid;
+  padding-top: 10px;
+  grid-template-rows: 1fr ;
+  row-gap: 15px;
+}
+.img-box {
+  height: 12vw;
+}
+.img-box img {
+  max-width: 100px;
+  max-height: 200px;
+  position: relative;
+  bottom: 50px;
+}
+h2 {
+  position: relative;
+  left: 11vw;
+  padding-top: 100px;
+}
 }
