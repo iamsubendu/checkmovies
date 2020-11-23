@@ -318,6 +318,9 @@ h2 {
   left: 11vw;
   padding-top: 100px;
 }
+footer {
+	padding-top: 100px;
+}
 
 }
 
@@ -391,5 +394,8 @@ h2 {
   position: relative;
   left: 11vw;
   padding-top: 100px;
+}
+footer {
+	padding-top: 100px;
 }
 }
